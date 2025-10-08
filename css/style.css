@@ -1,0 +1,786 @@
+@font-face {
+    font-family: 'MTD Portrait Script Bounce';
+    src: url('../fonts/MTD-Portrait-Script-Bounce.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SVN-Gotham';
+    src: url('../fonts/SVN-Gotham.woff2') format('woff2'),
+        url('../fonts/SVN-Gotham.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SVN-GothamBold';
+    src: url('../fonts/SVN-GothamBold.woff2') format('woff2'),
+        url('../fonts/SVN-GothamBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SVN-GothamLight';
+    src: url('../fonts/SVN-GothamLight.woff2') format('woff2'),
+        url('../fonts/SVN-GothamLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'SVN-GothamItalic';
+    src: url('../fonts/SVN-GothamItalic.woff2') format('woff2'),
+        url('../fonts/SVN-GothamItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SVN-GothamBoldItalic';
+    src: url('../fonts/SVN-GothamBoldItalic.woff2') format('woff2'),
+        url('../fonts/SVN-GothamBoldItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SVN-GothamBook';
+    src: url('../fonts/SVN-GothamBook.woff2') format('woff2'),
+        url('../fonts/SVN-GothamBook.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SVN-GothamBookItalic';
+    src: url('../fonts/SVN-GothamBookItalic.woff2') format('woff2'),
+        url('../fonts/SVN-GothamBookItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+:root {
+    --font-size-title: 3rem;
+    --font-famili-title: "MTD Portrait Script Bounce", sans-serif;
+    --text-title-color: #c9818eff;
+    --bg: #ffffff;
+    --text: #202123ff;
+    --header: #467b92;
+    --accent: #1f6f7a;
+    --muted: #9aa6ab;
+    --card: #f3f6f9ff;
+    --border: #231f20;
+    --radius: 12px;
+    --maxw: 430px;
+    --gap: 24px;
+    --accent-soft: rgba(31, 111, 122, 0.08);
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    /* font-family: "SVN-Gotham", sans-serif; */
+    font-size: 0.67rem;
+    font-weight: normal;
+    background-color: var(--bg);
+    color: #202123ff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.4;
+    /* padding: 24px; */
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    max-width: var(--maxw);
+    min-width: 375px;
+    /* border-radius: 16px; */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+}
+
+.container h2 {
+    font-family: var(--font-famili-title);
+    font-size: var(--font-size-title);
+    font-weight: 300;
+    color: var(--text-title-color);
+    padding: 5px;
+    margin: 0;
+}
+
+/* hero section ============= */
+.hero {
+    background-image: url('../images/base/hero.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 752px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+}
+
+.hero h2 {
+    color: #fff;
+    position: relative;
+    letter-spacing: 1.2px;
+}
+
+.hero h2:first-child {
+    right: -40px;
+}
+
+.hero h2:last-child {
+    left: -40px;
+}
+
+
+/* header-section ==========================> */
+.header-section {
+    background-image: url('../images/base/bg-top.png');
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.header-section .invitation-heading {
+    padding: 60px 0;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-section .invitation-heading .header-text h2 {
+    position: relative;
+}
+
+.header-section .invitation-heading .header-text h2:first-child {
+    left: -40px;
+}
+
+.header-section .invitation-heading .header-text h2:last-child {
+    right: -40px;
+}
+
+.header-section .invitation-text {
+    font-family: "SVN-GothamBook", sans-serif;
+    font-size: 0.5rem;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.header-section .img-couple1 {
+    padding: 70px 0;
+}
+
+.header-section .img-couple1 .box-img {
+    max-width: 243px;
+    max-height: 146px;
+    position: relative;
+}
+
+.header-section .img-couple1 .box-img img.main-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-section .img-couple1 .box-img img.flower-icon {
+    position: absolute;
+    bottom: -15px;
+    right: -45px;
+    width: 70px;
+    height: auto;
+}
+
+.header-section .date-section {
+    font-family: "SVN-GothamBold", sans-serif;
+    font-size: 2rem;
+    font-weight: normal;
+    text-align: center;
+}
+
+.header-section .date-section .date-heading {
+    margin: 0;
+}
+
+.header-section .location .map-img {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.header-section .location .map-img img {
+    width: 80%;
+}
+
+.header-section .location .map-btn {
+    text-decoration: none;
+    padding: 3px 64px 2px;
+    font-size: 1rem;
+    background-color: #c9818eff;
+    color: #fff;
+    border-radius: 15px;
+}
+
+/* <================================== end header-section */
+
+/* timeline-section ==========================> */
+.timeline-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/base/middle.png'),url('../images/base/bg-top.png');
+    background-position: center, top;
+    background-size: contain, contain;
+    background-repeat: no-repeat, repeat;
+    min-height: 504px;
+    padding: 80px 0;
+}
+
+.timeline-section .timeline-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.timeline-section .timeline-container {
+    max-width: 200px;
+    padding-top: 30px;
+}
+
+.timeline-section .timeline-container .item {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.timeline-section .timeline-container .item .time {
+    margin: 0;
+    font-family: "SVN-GothamBook", sans-serif;
+    font-size: 2.5vw;
+    font-weight: 200;
+}
+
+.timeline-section .timeline-container .item img.icon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+/* =========== dresscode ================= */
+.dresscode {
+    background-image: url('../images/base/bg-top.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px 0 0;
+}
+
+.dresscode .dresscode-container .head {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dresscode .dresscode-container .head p {
+    font-family: "SVN-GothamBook", sans-serif;
+    font-size: 0.569rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin: 3px 0;
+}
+
+.dresscode .dresscode-container .middle {
+    width: 100%;
+    padding-top: 58px;
+    padding-bottom: 30px;
+}
+
+.dresscode .dresscode-container .middle .circle-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dresscode .dresscode-container .middle .circle-items .item {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: .5px solid #231f20;
+}
+
+.dresscode .dresscode-container .middle .circle-items .item:nth-child(1) {
+    position: relative;
+    right: -15px;
+}
+
+.dresscode .dresscode-container .middle .circle-items .item:nth-child(2) {
+    position: relative;
+    right: -5px;
+}
+
+.dresscode .dresscode-container .middle .circle-items .item:nth-child(3) {
+    position: relative;
+    left: -5px;
+}
+
+.dresscode .dresscode-container .middle .circle-items .item:nth-child(4) {
+    position: relative;
+    left: -15px;
+}
+
+/* =========== */
+.dresscode .dresscode-container .couple-wrap {
+    max-height: 630px;
+}
+
+.dresscode .dresscode-container .couple-wrap .photo-wrap {
+    width: 100%;
+    position: relative;
+    height: 525px;
+}
+
+.dresscode .dresscode-container .couple-wrap .photo-wrap .bk-pink {
+    width: 64%;
+    height: auto;
+    position: absolute;
+}
+
+.dresscode .dresscode-container .couple-wrap .photo-wrap .main-photo {
+    width: 56%;
+    height: auto;
+    position: absolute;
+    top: 16px;
+    left: 0;
+}
+
+.dresscode .dresscode-container .couple-wrap .photo-wrap .flower1 {
+    width: 35%;
+    height: auto;
+    position: absolute;
+    bottom: 71px;
+    right: 94px;
+}
+
+.dresscode .dresscode-container .couple-wrap .photo-wrap .flower2 {
+    width: 52%;
+    height: auto;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+}
+
+.dresscode .dresscode-container .couple-wrap .photo-wrap .bottom {
+    width: 62%;
+    height: auto;
+    position: absolute;
+    bottom: -4px;
+    right: 16px;
+}
+
+
+/* ===================== album ================ */
+.album {
+    background-image: url('../images/base/bg-top.png');
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: top;
+    padding-top: 40px;
+}
+
+.album h2 {
+    text-align: center;
+    padding-bottom: 3   0px;
+}
+
+.swiper {
+    width: 100%;
+    max-width: 600px;
+    height: 679px;
+    margin: auto;
+    position: relative;
+  }
+
+  .swiper-slide img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  /* .swiper-pagination {
+    bottom: 10px !important;
+  } */
+   .swiper .swiper-pagination-bullet-active  {
+    background: var(--text-title-color)
+   } 
+  .swiper .swiper-button-next, .swiper .swiper-button-prev {
+    color: var(--text-title-color);
+  }
+/* rsvp ===========================================> */
+
+.rsvp {
+    background-image: url('../images/base/bg-top.png');
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: top;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    font-size: 0.6rem;
+    font-weight: normal;
+    padding: 25px 0;
+}
+
+.rsvp .title-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 25px;
+    padding-bottom: 10px;
+}
+
+.rsvp .head-title {
+    font-family: "SVN-GothamBook", sans-serif;
+    font-size: 0.9rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding: 25px 0 22px 0;
+}
+
+.rsvp .box-icon {
+    width: 40%;
+    padding-bottom: 5px;
+}
+
+.rsvp .box-icon img {
+    width: 100%;
+}
+
+.rsvp .rsvp-title {
+    font-family: "MTD Portrait Script Bounce", cursive;
+    font-size: 2.6rem;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.rsvp .rsvp-text {
+    font-family: "SVN-GothamBook", sans-serif;
+    text-transform: uppercase;
+    font-size: .53rem;
+    font-weight: 300;
+}
+
+#rsvp-form {
+    width: 100%;
+    font-family: "SVN-GothamLight", sans-serif;
+}
+
+#rsvp-form .form-group.form-group-confirm {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+#rsvp-form .form-group.form-group-info {
+    /* padding: 30px 0 18px 0; */
+}
+
+#rsvp-form .form-group.form-group-info div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#rsvp-form .form-group.form-group-info div:nth-child(2) input {
+    width: 65%;
+}
+
+#rsvp-form .form-group.form-group-info div:nth-child(2) label {
+    font-size: .53rem;
+}
+
+
+#rsvp-form .form-group {
+    margin-bottom: 10px;
+}
+/* #rsvp-form .form-group.form-group-info div:first */
+
+#rsvp-form .form-group label span {
+    font-style: italic;
+}
+
+#rsvp-form input[type="radio"] {
+    display: none;
+}
+
+#rsvp-form .radio-button {
+    font-family: "SVN-GothamBook", sans-serif;
+    display: inline-block;
+    border-radius: 7px;
+    cursor: pointer;
+    background: #f4e4e9ff;
+    border: none;
+    text-transform: uppercase;
+    user-select: none;
+    width: 47%;
+    line-height: 1.6;
+    padding: 6px 0;
+    margin: 5px 0;
+    font-size: .53rem;
+    transition: 0.5s ease;
+}
+
+#rsvp-form .form-group input[type="radio"]:checked+.radio-button {
+    color: #ffffff;
+    background-color: var(--text-title-color);
+}
+
+#rsvp-form .form-group input.input-text {
+    font-family: "SVN-GothamLight", sans-serif;
+    font-size: 0.7rem;
+    font-weight: normal;
+    font-weight: normal;
+    width: 100%;
+    height: 30px;
+    display: inline-block;
+    border-radius: 7px;
+    cursor: pointer;
+    background: #f4e4e9ff;
+    border: none;
+    user-select: none;
+    padding-left: 13px;
+    outline: none;
+}
+
+#rsvp-form textarea {
+    font-family: "SVN-GothamLight", sans-serif;
+    font-size: 0.7rem;
+    font-weight: normal;
+    background: #f4e4e9ff;
+    border: none;
+    width: 100%;
+    height: 100px;
+    display: inline-block;
+    border-radius: 15px;
+    cursor: pointer;
+    user-select: none;
+    padding-top: 10px;
+    padding-left: 13px;
+    outline: none;
+}
+
+#rsvp-form .vegetarian {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#rsvp-form .vegetarian .text-box {
+    font-family: "SVN-GothamLight", sans-serif;
+    font-size: .53rem;
+}
+
+#rsvp-form .vegetarian .button-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+#rsvp-form .vegetarian .text-box .sub-en {
+    font-style: italic;
+}
+
+#rsvp-form .vegetarian .button-box .radio-button {
+    /* margin: 0 10px; */
+    width: 48%;
+    font-size: 0.55rem;
+}
+
+#rsvp-form .additional {
+    padding: 0 25px;
+}
+#rsvp-form .additional p {
+    font-size: .53rem;
+}
+
+#rsvp-form .form-actions button {
+    border: none;
+    padding: 10px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 7px;
+    font-size: 16px;
+}
+
+#rsvp-form .form-actions {
+    padding-top: 20px;
+}
+
+#rsvp-form .form-actions button {
+    background: var(--text-title-color);
+    font-family: "SVN-GothamBold", sans-serif;
+    font-size: 0.6rem;
+    font-weight: normal;
+    color: #ffffff;
+    padding: 8px 20px;
+}
+
+#rsvp-form .form-actions button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+#rsvp-form .form-group.form-group-confirm,
+#rsvp-form .form-group.form-group-info,
+#rsvp-form .vegetarian {
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+/* <=================================== end rsvp */
+
+.end {
+    padding: 15px 0 5px 0;
+    font-family: "SVN-GothamBold", sans-serif;
+    font-size: 0.6rem;
+    font-weight: normal;
+}
+
+@media screen and (max-width: 390px) {
+    .dresscode .dresscode-container .couple-wrap .photo-wrap {
+        height: 475px;
+    }
+
+}
+
+
+@media screen and (max-width: 375px) {
+    .timeline-section .timeline-container .item img.icon {
+        width: 22px;
+        height: 22px;
+    }
+
+    .timeline-section .timeline-container .item {
+        padding-bottom: 10px;
+    }
+
+    .dresscode .dresscode-container .couple-wrap .photo-wrap {
+        height: 450px;
+    }
+
+}
+
+
+.pulsate-fwd {
+    -webkit-animation: pulsate-fwd 2s ease-in-out infinite both;
+    animation: pulsate-fwd 2s ease-in-out infinite both;
+}
+
+/**
+ * ----------------------------------------
+ * animation pulsate-fwd
+ * ----------------------------------------
+ */
+@-webkit-keyframes pulsate-fwd {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes pulsate-fwd {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.ping {
+    -webkit-animation: ping 1s ease-in-out infinite both;
+    animation: ping 1s ease-in-out infinite both;
+}
+
+@-webkit-keyframes ping {
+    0% {
+        -webkit-transform: scale(0.2);
+        transform: scale(0.2);
+        opacity: 0.8;
+    }
+
+    80% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: scale(2.2);
+        transform: scale(2.2);
+        opacity: 0;
+    }
+}
+
+@keyframes ping {
+    0% {
+        -webkit-transform: scale(0.2);
+        transform: scale(0.2);
+        opacity: 0.8;
+    }
+
+    80% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: scale(2.2);
+        transform: scale(2.2);
+        opacity: 0;
+    }
+}
