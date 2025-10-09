@@ -150,10 +150,10 @@ body {
 
 /* header-section ==========================> */
 .header-section {
-    background-image: url('../images/base/bg-top.png');
-    background-repeat: repeat;
-    background-size: contain;
-    background-position: top;
+    background-image: url('../images/base/bg-top.png'), url('../images/base/back-flowers.png');
+    background-repeat: repeat, no-repeat;
+    background-size: contain, contain;
+    background-position: top, top;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -252,11 +252,11 @@ body {
     justify-content: center;
     align-items: center;
     background-image: url('../images/base/middle.png'),url('../images/base/bg-top.png');
-    background-position: center, top;
-    background-size: contain, contain;
+    background-position: center, center;
+    background-size: contain, cover;
     background-repeat: no-repeat, repeat;
     min-height: 504px;
-    padding: 80px 0;
+    padding: 120px 0;
 }
 
 .timeline-section .timeline-container {
@@ -275,15 +275,14 @@ body {
     padding-bottom: 20px;
 }
 
-.timeline-section .timeline-container .item .time {
+.timeline-section .timeline-container .item p {
     margin: 0;
     font-family: "SVN-GothamBook", sans-serif;
-    font-size: 2.5vw;
-    font-weight: 200;
+    font-size: .55rem;
 }
 
 .timeline-section .timeline-container .item img.icon {
-    width: 30px;
+    width: 25px;
     height: 30px;
     object-fit: contain;
 }
@@ -411,7 +410,7 @@ body {
 
 .album h2 {
     text-align: center;
-    padding-bottom: 3   0px;
+    padding-bottom: 30px;
 }
 
 .swiper {
@@ -439,10 +438,10 @@ body {
 /* rsvp ===========================================> */
 
 .rsvp {
-    background-image: url('../images/base/bg-top.png');
-    background-repeat: repeat;
-    background-size: contain;
-    background-position: top;
+    background-image: url('../images/base/bg-top.png'), url('../images/base/back-flowers.png');
+    background-repeat: repeat, no-repeat;
+    background-size: contain, contain;
+    background-position: top, top;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -662,6 +661,212 @@ body {
     padding-left: 25px;
 }
 
+/* ========== high light section ====================== */
+.highlight-section {
+    background-image: url('../images/base/bg-top.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 495px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.highlight-section .highlight-container {
+    padding: 0 25px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.highlight-section .highlight-container .item {
+    width: 325px;
+    height: 257px;  
+    position: relative;
+}
+
+.highlight-section .highlight-container .item:first-child {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    z-index: 1;
+}
+
+.highlight-section .highlight-container .item:last-child {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    z-index: 2;
+}
+
+.highlight-section .highlight-container .item1 img.bg {
+    width: 268px;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+}
+
+.highlight-section .highlight-container .item1 img.main {
+    width: 229px;
+    height: auto;
+    top: 18px;
+    left: 22px;
+    object-fit: cover;
+    position: absolute;
+}
+
+.highlight-section .highlight-container .item1 img.flower_02 {
+    width: 106px;
+    height: auto;
+    top: -35px;
+    right: 32px;
+    object-fit: cover;
+    position: absolute;
+}
+
+.highlight-section .highlight-container .item1 img.flower_01 {
+    width: 222px;
+    height: auto;
+    top: -67px;
+    right: -29px;
+    object-fit: cover;
+    position: absolute;
+}
+
+
+.highlight-section .highlight-container .item2 img.bg {
+    width: 268px;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    object-fit: cover;
+}
+
+.highlight-section .highlight-container .item2 img.main {
+    width: 229px;
+    height: auto;
+    position: absolute;
+    bottom: 60px;
+    right: 25px;
+    object-fit: cover;
+}
+
+.highlight-section .highlight-container .item2 img.flower {
+    width: 155px;
+    height: auto;
+    position: absolute;
+    top: -23px;
+    left: -13px;
+    object-fit: cover;
+}
+
+/* ============== celebrate =========== */
+.celebrate {
+    background-image: url('../images/base/bg-top.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.celebrate .celebrate-container {
+    padding: 50px 25px;
+    text-align: center;
+    width: 100%;
+}
+
+.gift .gift-container p,
+.celebrate .celebrate-container p {
+    font-family: "SVN-GothamBook", sans-serif;
+    font-size: 0.6rem;
+    font-weight: normal;
+    padding-bottom: 15px;
+}
+
+.gift .gift-container .btn,
+.celebrate .celebrate-container .btn {
+    background: var(--text-title-color);
+    font-family: "SVN-GothamBold", sans-serif;
+    font-size: 0.62rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #ffffff;
+    padding: 8px 30px;
+    border-radius: 7px;
+}
+
+.celebrate .celebrate-container .divider-img {
+    width: 100%;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+.celebrate .celebrate-container .divider-img img {
+    width: 40%;
+    padding-top: 20px;
+}
+
+/* ============== gift =========== */
+.gift {
+    background-image: url('../images/base/bg-top.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+}
+
+.gift .gift-container {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.gift .gift-container h2 {
+    padding-bottom: 30px;
+}
+
+.gift img {
+    position: absolute;
+}
+
+.gift img.bottom {
+    width: 100%;
+    height: auto;
+    bottom: 0;
+}
+
+.gift img.right {
+    width: 218px;
+    height: auto;
+    bottom: 0;
+    right: 0;
+}
+
+.gift img.left {
+    width: 188px;
+    height: auto;
+    bottom: 0;
+    left: 0;
+}
+
+.gift img.middle {
+    width: 150px;
+    height: auto;
+    bottom: 0;
+    left: 58%;
+    transform: translateX(-50%);
+}
+
 /* <=================================== end rsvp */
 
 .end {
@@ -671,13 +876,21 @@ body {
     font-weight: normal;
 }
 
+@media screen and (min-width: 500px) {
+    .timeline-section .timeline-container .item p  {
+        font-size: .6rem;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
 @media screen and (max-width: 390px) {
     .dresscode .dresscode-container .couple-wrap .photo-wrap {
         height: 475px;
     }
 
 }
-
 
 @media screen and (max-width: 375px) {
     .timeline-section .timeline-container .item img.icon {
@@ -686,7 +899,7 @@ body {
     }
 
     .timeline-section .timeline-container .item {
-        padding-bottom: 10px;
+        padding-bottom: 15px;
     }
 
     .dresscode .dresscode-container .couple-wrap .photo-wrap {
