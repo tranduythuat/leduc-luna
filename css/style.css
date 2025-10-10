@@ -1007,17 +1007,18 @@ body {
     position: fixed;
     bottom: 14px;
     right: 20px;
-    width: 120px;
+    width: 125px;
     height: 36px;
     background-color: #f4e4e9ff;
     z-index: 999;
     font-family: "SVN-GothamBook", sans-serif;
-    font-size: .8rem;
+    font-size: .49rem;
     color: #cc5a6e;
     display: flex;
+    text-align: right;
     justify-content: flex-start;
     align-items: center;
-    padding: 10px;
+    padding: 10px 17px 10px 10px;
     border-radius: 25px;
     opacity: .8;
 }
