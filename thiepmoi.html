@@ -228,6 +228,10 @@
                         <input data-aos="fade-up" type="text" class="phone input-text" id="phone" name="phone"
                             placeholder="Số điện thoại" required />
                     </div>
+                    <div class="form-group">
+                        <input data-aos="fade-up" type="text" class="address-receive-card input-text" id="address-receive-card" name="address_receive_card"
+                            placeholder="Địa chỉ nhận Thiệp cứng" />
+                    </div>
                 </div>
                 <div class="form-group vegetarian">
                     <div class="text-box">
@@ -521,6 +525,7 @@
                 guest_number: guest_number,
                 name: name,
                 phone: phone,
+                address_receive_card: address_receive_card,
                 wish: wish
             } = data;
             console.log("🚀 ~ handleFormSubmit 2~ data:", data);
@@ -547,6 +552,7 @@
                         name,
                         confirm,
                         phone,
+                        address_receive_card,
                         guest_number,
                         confirm_vegetarian,
                         additional,
